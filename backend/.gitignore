@@ -1,0 +1,44 @@
+# ------------------------------------
+# 1. SEGURANÇA CRÍTICA - VARIAVEIS DE AMBIENTE
+# Arquivo que contém a chave GEMINI_API_KEY
+# NUNCA deve ser commitado!
+.env
+.env.*
+.DS_Store
+
+# ------------------------------------
+# 2. DEPENDÊNCIAS DO NODE
+# Node.js modules - Diretório de dependências
+/node_modules
+/jspm_packages
+
+# Arquivos de log e cache gerados
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ------------------------------------
+# 3. PASTAS DE BUILD E OUTPUT
+# Pastas de saída do Backend e Frontend
+/build
+/dist
+/out
+/tmp
+/temp
+
+# Pasta temporária de upload do Node/Express (MUITO IMPORTANTE!)
+# Garante que nenhum arquivo de usuário (incluindo PDFs) seja commitado
+/backend/uploads/
+/server/uploads/
+
+# ------------------------------------
+# 4. EXCLUSÕES DE SISTEMAS OPERACIONAIS
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux
+*.swp
